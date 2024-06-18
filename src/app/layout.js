@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Snapcode - Create Beautiful Code Images',
   description:
-    'Easily create and share beautiful images of your source code with Snapcode.'
+    'Easily create and share beautiful images of your source code with Snapcode.',
+  keywords: 'code, images, share, create, Snapcode, source code, coding'
 }
 
 export default function RootLayout({ children }) {
