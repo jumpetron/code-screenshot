@@ -3,6 +3,10 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const COLORS = {
+  BLACK: '#000000'
+}
+
 export const metadata = {
   title: 'Snapcode - Create Beautiful Code Images',
   description:
@@ -14,30 +18,38 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <head>
-        <meta charSet='UTF-8' />
+        <meta charSet='utf-8' />
+        <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <meta name='description' content={metadata.description} />
+        <meta name='keywords' content={metadata.keywords} />
+        <meta name='application-name' content={metadata.title} />
+        <meta name='twitter:card' content='summary' />
+        <meta name='twitter:site' content='@snapcode_app' />
+        <meta name='twitter:title' content={metadata.title} />
+        <meta name='twitter:description' content={metadata.description} />
         <meta
-          property='og:title'
-          content='Snapcode - Create Beautiful Code Images'
+          name='twitter:image'
+          content='https://snapcode.com/static/brand/banner.png'
         />
+        <meta property='og:title' content={metadata.title} />
+        <meta property='og:description' content={metadata.description} />
+        <meta property='og:image' content='/static/brand/banner.png' />
+        <meta name='theme-color' content={COLORS.BLACK} />
         <meta
-          property='og:description'
-          content='Easily create and share beautiful images of your source code with Snapcode.'
+          name='apple-mobile-web-app-status-bar-style'
+          content={COLORS.BLACK}
         />
-        <meta property='og:image' content='/path-to-your-image.jpg' />
-        <meta property='og:url' content='https://your-website-url.com' />
-        <meta name='twitter:card' content='summary_large_image' />
-        <meta
-          name='twitter:title'
-          content='Snapcode - Create Beautiful Code Images'
+        <title>
+          {metadata.title} | Create and share beautiful images of your source
+          code
+        </title>
+        <link rel='shortcut icon' href='/favicon.ico' />
+        <link rel='manifest' href='/manifest.json' />
+        <link
+          rel='apple-touch-icon'
+          href='/static/brand/apple-touch-icon.png'
         />
-        <meta
-          name='twitter:description'
-          content='Easily create and share beautiful images of your source code with Snapcode.'
-        />
-        <meta name='twitter:image' content='/path-to-your-image.jpg' />
-        <title>{metadata.title}</title>
       </head>
       <body className={inter.className}>{children}</body>
     </html>

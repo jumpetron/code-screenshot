@@ -1,7 +1,7 @@
 {
   "name": "Snapcode",
   "short_name": "Snapcode",
-  "description": "Create and share beautiful images of your source code.",
+  "description": "Easily create and share beautiful images of your source code.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
