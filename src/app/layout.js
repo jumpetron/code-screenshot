@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         <meta name='twitter:description' content={metadata.description} />
         <meta
           name='twitter:image'
-          content='https://snapcode.com/static/brand/banner.png'
+          content='https://snapcode.optimarko.com/static/brand/banner.png'
         />
         <meta property='og:title' content={metadata.title} />
         <meta property='og:description' content={metadata.description} />
