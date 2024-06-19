@@ -49,7 +49,7 @@ export default function Home() {
   }, [])
   return (
     <>
-      <main className='px-8 relative dark min-h-screen flex justify-center flex-col gap-10 items-center bg-neutral-950 text-white pt-12'>
+      <main className='relative inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] px-8  dark min-h-screen flex justify-center flex-col gap-10 items-center bg-neutral-950 text-white pt-12'>
         <TopContent />
         <Card className='py-6 px-8 mx-6 bg-neutral-900/90 backdrop-blur'>
           <CardContent className='flex flex-wrap gap-6 p-0 '>
