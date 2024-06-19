@@ -28,6 +28,7 @@
     "react-hot-toast": "^2.4.1",
     "react-hotkeys-hook": "^4.5.0",
     "react-simple-code-editor": "^0.13.1",
+    "sharp": "^0.33.4",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7",
     "zustand": "^4.5.2"
