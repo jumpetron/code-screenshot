@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Logo from '../../public/logo.png'
+import Logo from './../../public/logo.png'
 import Link from 'next/link'
 
 const TopContent = () => {
@@ -8,7 +8,13 @@ const TopContent = () => {
     <div className='flex flex-col justify-center items-center text-center'>
       <div className='w-[268px] h-[65px]'>
         <Link href={'/'}>
-          <Image src={Logo} alt='logo' className='w-full object-cover' />
+          <Image
+            width={'100'}
+            height={'100'}
+            src='https://snapcode.optimarko.com/logo.png'
+            alt='logo'
+            className='w-full object-cover'
+          />
         </Link>
       </div>
       <h1 className='xl:text-xl lg:text-lg text-base  mt-5 md:w-[70%] sm:w-[70%] w-full'>
