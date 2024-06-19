@@ -40,10 +40,7 @@ export default function RootLayout({ children }) {
           name='apple-mobile-web-app-status-bar-style'
           content={COLORS.BLACK}
         />
-        <title>
-          {metadata.title} | Create and share beautiful images of your source
-          code
-        </title>
+        <title>{`${metadata.title} | Create and share beautiful images of your source code`}</title>
         <link rel='shortcut icon' href='/favicon.ico' />
         <link rel='manifest' href='/manifest.json' />
         <link
