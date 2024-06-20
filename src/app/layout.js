@@ -1,5 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Head from 'next/head'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,13 +13,17 @@ export const metadata = {
   title: 'Snapcode - Create Beautiful Code Images',
   description:
     'Easily create and share beautiful images of your source code with Snapcode.',
-  keywords: 'code, images, share, create, Snapcode, source code, coding'
+  keywords: 'code, images, share, create, Snapcode, source code, coding',
+  verification: {
+    google: 'R2cyJD5TCK0o1P_r7Nib0GT4wm325gWsCG-3jjZiQWk'
+  }
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <head>
+      <Head>
+        <meta name='google-site-verification' content='google' />
         <meta charSet='utf-8' />
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
@@ -47,8 +53,10 @@ export default function RootLayout({ children }) {
           rel='apple-touch-icon'
           href='/static/brand/apple-touch-icon.png'
         />
-      </head>
+      </Head>
+
       <body className={inter.className}>{children}</body>
+      <GoogleAnalytics gaId='G-7M74HR8JVE' />
     </html>
   )
 }
