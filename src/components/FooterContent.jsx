@@ -14,14 +14,22 @@ const FooterContent = () => {
             <Link
               target='_blank'
               href={'https://www.facebook.com/ahmedfoysal.dev'}>
-              <Image className='rounded-full' src={faysal} alt='faysal' />
+              <Image
+                className='rounded-full'
+                src={'https://snapcode.optimarko.com/faysal.png'}
+                alt='faysal'
+              />
             </Link>
           </div>
           <div className='w-[30px] h-[30px] rounded-full'>
             <Link
               target='_blank'
               href={'https://www.linkedin.com/in/raihanmahmudiut/'}>
-              <Image className='rounded-full' src={rayhan} alt='faysal' />
+              <Image
+                className='rounded-full'
+                src={'https://snapcode.optimarko.com/rayhan.jpeg'}
+                alt='faysal'
+              />
             </Link>
           </div>
         </div>
@@ -31,7 +39,10 @@ const FooterContent = () => {
           <small>Powered By</small>
           <div className='w-[90px]'>
             <Link target='_blank' href={'https://www.optimarko.com/'}>
-              <Image src={logo} alt='optimarko logo' />
+              <Image
+                src={'https://snapcode.optimarko.com/optimarko.webp'}
+                alt='optimarko logo'
+              />
             </Link>
           </div>
         </div>
